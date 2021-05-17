@@ -8,9 +8,11 @@
 
 body {
   width: 100%;
+  overflow-x: hidden;
 }
 
 @keyframes animateDown {
+  /* at x percent, move to 0px */
   0%,
   20%,
   50%,
@@ -20,10 +22,12 @@ body {
   }
 
   40% {
+    /* at 40 percent, move 5px up*/
     transform: translateY(5px);
   }
 
   60% {
+    /* at 60 percent, move 5px up*/
     transform: translateY(3px);
   }
 }
