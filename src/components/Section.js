@@ -8,6 +8,9 @@ const Section = () => {
         <h1>Model S</h1>
         <p>Order Online for Touchless Delivery</p>
       </ItemText>
+
+
+      
     </Wrap>
   )
 }
@@ -21,6 +24,9 @@ const Wrap = styled.div`
   background-image: url('/images/model-s.jpg');
 `
 
-const ItemText = styled.div``
+const ItemText = styled.div`
+  padding-top: 15vh;
+  text-align: center;
+`
 
 export default Section
