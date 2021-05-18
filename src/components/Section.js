@@ -15,9 +15,12 @@ const Section = ({title, description, leftBtnText, rightBtnText, backgroundImg})
             {leftBtnText}
           </LeftButton>
 
-          <RightButton>
-            {rightBtnText}
-          </RightButton>
+          {/* If rightBtnText exists, then make rightBtnText */}
+          {rightBtnText &&
+            <RightButton>
+              {rightBtnText}
+            </RightButton>
+          }
         </ButtonGroup>
         <DownArrow src="/images/down-arrow.svg"/>
       </Buttons>
