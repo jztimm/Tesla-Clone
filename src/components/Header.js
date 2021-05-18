@@ -17,10 +17,10 @@ const Header = () => {
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Tesla Account</a>
+        <CustomMenu>
+          <MenuIcon/>
+        </CustomMenu>
       </RightMenu>
-      <CustomMenu>
-        <MenuIcon/>
-      </CustomMenu>
     </Container>
   )
 }
@@ -30,6 +30,7 @@ const Container = styled.div`
   position: fixed;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 0 20px;
   top: 0;
   left: 0;
@@ -47,6 +48,10 @@ const Menu = styled.div`
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: no-wrap;
+  }
+
+  @media(max-width: 768px) {
+    display: none;
   }
 `
 
