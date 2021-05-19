@@ -96,9 +96,11 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+
   // translateX moves the prop. if props.show is true, do not move (0), if false,
   // move 100% of the width off screen
   transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
+  transition: transform 0.5s;
 
   li {
     padding: 15px 0;
