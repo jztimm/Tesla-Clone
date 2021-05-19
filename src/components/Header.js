@@ -36,8 +36,14 @@ const Header = () => {
         <li><a href="#">Existing Inventory</a></li>
         <li><a href="#">Used Inventory</a></li>
         <li><a href="#">Trade-in</a></li>
-        <li><a href="#">Cyber Truck</a></li>
+        <li><a href="#">CyberTruck</a></li>
         <li><a href="#">Roadster</a></li>
+        <li><a href="#">Semi</a></li>
+        <li><a href="#">Charging</a></li>
+        <li><a href="#">Powerwall</a></li>
+        <li><a href="#">Commercial Energy</a></li>
+        <li><a href="#">Utilities</a></li>
+        <li><a href="#">Test Drive</a></li>
       </BurgerNav>
 
     </Container>
@@ -65,6 +71,7 @@ const Menu = styled.div`
 
   a {
     font-weight: 600;
+    font-size: 14px;
     text-transform: uppercase;
     padding: 0 10px;
     flex-wrap: no-wrap;
@@ -80,6 +87,7 @@ const RightMenu = styled.div`
   align-items: center;
     a {
       font-weight: 600;
+      font-size: 14px;
       text-transform: uppercase;
       margin-right: 10px;
     }
@@ -91,6 +99,8 @@ const CustomMenu = styled(MenuIcon)`
 
 const BurgerNav = styled.div`
   position: fixed;
+  text-transform: uppercase;
+  font-size: 14px;
   top: 0;
   bottom: 0;
   right: 0;

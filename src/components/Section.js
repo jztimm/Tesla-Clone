@@ -8,7 +8,7 @@ const Section = ({title, description, leftBtnText, rightBtnText, backgroundImg})
       <Fade bottom>
         <ItemText>
           <h1>{title}</h1>
-          <p>{description}</p>
+          <p>{description} <a href="#">Touchless Delivery</a></p>
         </ItemText>
       </Fade>
 
