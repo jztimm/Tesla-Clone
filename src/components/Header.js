@@ -21,13 +21,11 @@ const Header = () => {
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Tesla Account</a>
-        <CustomMenu>
-          <MenuIcon/>
-        </CustomMenu>
+        <CustomMenu onClick={() => setBurgerStatus(true)}/>
       </RightMenu>
-      <BurgerNav>
+      <BurgerNav show={burgerStatus}>
         <CloseWrapper>
-          <CustomClose />        
+          <CustomClose onClick={() => setBurgerStatus(false)}/>        
         </CloseWrapper>
         <li><a href="#">Existing Inventory</a></li>
         <li><a href="#">Used Inventory</a></li>
@@ -98,6 +96,9 @@ const BurgerNav = styled.div`
   display: flex;
   flex-direction: column;
   text-align: start;
+  // translateX moves the prop. if props.show is true, do not move (0), if false,
+  // move 100% of the width off screen
+  transform: ${props => props.show ? 'translateX(0)' : 'translateX(100%)'};
 
   li {
     padding: 15px 0;
